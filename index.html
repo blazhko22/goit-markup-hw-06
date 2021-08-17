@@ -293,41 +293,39 @@
                     </button>
                     <form class="modal-from">
                         <p class="modal-from-p">Оставьте свои данные, мы вам перезвоним</p> 
-                        <label class="modal-label">
-                            <span class="modal-from-span">Имя</span>
-                            <input class="modal-from-input" type="text" required minlength="0">
+                        <div class="modal-from-box">    
+                            <label for="name" class="modal-label">Имя</label>                    
+                            <input type="text" class="modal-from-input" name="name" id="name"/>
                             <svg class="modal-from-icon" width="18" height="18">
                                 <use href="./img/icons.svg#icon-person"></use>
                             </svg>
-                        </label>
-                        <label class="modal-label">
-                            <span class="modal-from-span">Телефон</span>
-                            <input class="modal-from-input" type="phone">
+                        </div>  
+                        <div class="modal-from-box"> 
+                            <label for="tel" class="modal-label">Телефон</label>                        
+                            <input type="phone" class="modal-from-input" name="tel" id="tel"/>
                             <svg class="modal-from-icon" width="18" height="18">
                                 <use href="./img/icons.svg#icon-phone-black"></use>
-                            </svg>
-                        </label>
-                        <label class="modal-label">
-                            <span class="modal-from-span">Почта</span>
-                            <input class="modal-from-input" type="email">
+                            </svg>                            
+                        </div> 
+                        <div class="modal-from-box">  
+                            <label for="email" class="modal-label">Почта</label>                            
+                            <input type="email" class="modal-from-input" name="email" id="email"/>
                             <svg class="modal-from-icon" width="18" height="18">
                                 <use href="./img/icons.svg#icon-email"></use>
                             </svg>
-                        </label>
-                        <label class="modal-label">
-                            <span class="modal-from-span">Комментарий</span>
+                        </div>  
+                        <div class="modal-from-box">    
+                            <label class="modal-label">Комментарий</label>                               
                             <textarea class="modal-from-comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
-                        </label>
-                        <label class="modal-checkbox">
-                            <input class="modal-checkbox-input" type="checkbox" name="agreement" value="agreement" />
-                            <span class="modal-checkbox-span">Соглашаюсь с рассылкой и принимаю 
-                                <a class="modal-checkbox-link" href="">Условия договора</a>
-                            </span> 
-                            <svg class="modal-checkbox-icon" width="15" height="15">
+                        </div> 
+                        <div class="modal-from-box">
+                            <input type="checkbox" class="modal-checkbox-input"  name="agreement" value="agreement" id="agreement"/>   
+                            <label for="agreement" class="modal-checkbox">Соглашаюсь с рассылкой и принимаю <a class="modal-checkbox-link" href="">Условия договора</a></label>                            
+                            <!-- <svg class="modal-checkbox-icon" width="15" height="15">
                                 <use href="./img/icons.svg#icon-checkbox"></use>
-                            </svg>
-                        </label>
-                        <button class="modal-checkbox-button">Отправить</button>
+                            </svg> -->
+                        </div>
+                        <button class="modal-from-button">Отправить</button>
                     </form>
                 </div>                
             </div>            
