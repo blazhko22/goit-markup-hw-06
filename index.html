@@ -318,14 +318,14 @@
                             <label class="modal-label">Комментарий</label>                               
                             <textarea class="modal-from-comment" name="comment" rows="5" placeholder="Введите текст"></textarea>
                         </div> 
-                        <div class="modal-from-box">
-                            <input type="checkbox" class="modal-checkbox-input"  name="agreement" value="agreement" id="agreement"/>   
-                            <label for="agreement" class="modal-checkbox">Соглашаюсь с рассылкой и принимаю <a class="modal-checkbox-link" href="">Условия договора</a></label>                            
-                            <!-- <svg class="modal-checkbox-icon" width="15" height="15">
-                                <use href="./img/icons.svg#icon-checkbox"></use>
-                            </svg> -->
+                        <div class="modal-checkbox">
+                            <label for="agreement" class="modal-checkbox-label">
+                                <input type="checkbox" class="modal-checkbox-input"  name="agreement" value="agreement" id="agreement"/>
+                                <span class="checkbox-icon"></span>
+                                Соглашаюсь с рассылкой и принимаю <a class="modal-checkbox-link" href="">Условия договора</a>       
+                            </label>                            
                         </div>
-                        <button class="modal-from-button">Отправить</button>
+                        <button type="submit" class="modal-from-button">Отправить</button>
                     </form>
                 </div>                
             </div>            
